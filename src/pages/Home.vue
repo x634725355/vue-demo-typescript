@@ -33,45 +33,24 @@ export default class HelloWorld extends Vue {
     const { decrement, messageCount, increment } = this;
 
     return (
-      <div>
-        <button onclick={decrement}>-</button>
-        <div>12346 {messageCount}</div>
-        <button onclick={increment}>+</button>
+      <div class="box">
+        <div class="start">Game Start</div>
+        <div>{messageCount}</div>
+        <button onclick={increment}>++++</button>
       </div>
     );
-  }
-
-  // 输入：["h","e","l","l","o"]
-  // 输出：["o","l","l","e","h"]
-  reverse(ary: any): any {
-    let length: number = ary.length;
-
-    return ary;
-  }
-
-  allowDrop(draggingNode: any, dropNode: any, type: any) {
-    return true;
-  }
-  allowDrag(draggingNode: any) {
-    return true;
   }
 }
 </script>
 
 <style scoped lang="less">
 .box {
-  .logo {
-    font-size: 60px;
-    margin: 100px 0;
+  border: 2px solid #ddd;
+  width: 50vw;
+  height: 50vh;
+  margin: auto;
+  .start {
     text-align: center;
   }
-}
-
-/deep/ .el-table .warning-row {
-  background: oldlace;
-}
-
-/deep/ .el-table .success-row {
-  background: #f0f9eb;
 }
 </style>
