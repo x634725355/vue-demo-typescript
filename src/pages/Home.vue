@@ -38,6 +38,8 @@ export default class HelloWorld extends Vue {
         <div>{messageCount}</div>
         <button onclick={increment}>++++</button>
         <button onclick={decrement}>-----</button>
+
+        <div></div>
       </div>
     );
   }
